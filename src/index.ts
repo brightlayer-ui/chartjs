@@ -1,3 +1,4 @@
+import {ChartConfiguration} from "chart.js";
 import {pxbBarChartData, pxbBarChartLabels, pxbBarChartOptions} from './config/pxb-barchart-config';
 import {pxbDonutChartData, pxbDonutChartLabels, pxbDonutChartOptions} from './config/pxb-donut-config';
 import {pxbLineChartData, pxbLineChartLabels, pxbLineChartOptions} from './config/pxb-linechart-config';
@@ -5,9 +6,9 @@ import {pxbPieChartData, pxbPieChartLabels, pxbPieChartOptions} from './config/p
 import Chart = require("chart.js");
 
 /* This is a Utility wrapper around ChartJS that creates graph configurations with Eaton themes. */
-export class PxBlueChartUtils {
+export class PxbChartJsUtils {
 
-  static createBarChartConfig() {
+  static createBarChartConfig(): ChartConfiguration {
      return {
         type: 'bar',
         data: {
@@ -18,7 +19,7 @@ export class PxBlueChartUtils {
      };
   }
 
-  static createPieChart() {
+  static createPieChart(): ChartConfiguration {
      return {
         type: 'pie',
         data: {
@@ -29,7 +30,7 @@ export class PxBlueChartUtils {
      };
   }
 
-  static createLineChart() {
+  static createLineChart(): ChartConfiguration {
      return {
         type: 'line',
         data: {
@@ -40,7 +41,7 @@ export class PxBlueChartUtils {
      };
   }
 
-  static createDonutChartConfig() {
+  static createDonutChartConfig(): ChartConfiguration {
      return {
         type: 'doughnut',
         data: {
@@ -51,7 +52,7 @@ export class PxBlueChartUtils {
      };
   }
 
-  static drawChart(config: any, id: string) {
+  static drawChart(config: any, id: string): Chart {
      const ctx = (document.getElementById(id) as HTMLCanvasElement).getContext('2d') as CanvasRenderingContext2D;
      return new Chart(ctx, config);
   }

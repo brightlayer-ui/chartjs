@@ -1,6 +1,5 @@
 // @ts-ignore
 import * as PXBColors from '@pxblue/colors';
-export const OpenSans = 'Open Sans';
 export const Helvetica = 'Helvetica';
 
 export const pxbColorWheel = [
@@ -21,11 +20,3 @@ export const pxbColorWheel = [
 ];
 
 export const pxbColors = PXBColors;
-
-export const sizes = {
-  title: '1.4em',
-  subtitle: '1.1em',
-  axisTitle: '1em',
-  axisLabel: '.8em',
-  tootlip: '1em'
-};

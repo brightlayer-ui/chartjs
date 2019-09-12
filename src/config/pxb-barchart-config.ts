@@ -1,9 +1,10 @@
+import {ChartDataSets, ChartOptions} from "chart.js";
 import {Helvetica, pxbColorWheel} from '../util/styles';
-import {getRandomData} from '../util/utilities';
+import {getRandomData} from "../util/utilities";
 
 export const pxbBarChartLabels = ['Jan', 'Feb', 'Marc', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-export const pxbBarChartData = createRandomDataSet(3, 12);
-export const pxbBarChartOptions = {
+export const pxbBarChartData = createBarChartData(3, 12);
+export const pxbBarChartOptions: ChartOptions = {
   responsive: true,
   legend: {
     position: 'bottom',
@@ -35,14 +36,14 @@ export const pxbBarChartOptions = {
   }
 };
 
-function createRandomDataSet(dataSets: number, points: number) {
-  const data = [];
-  for (let i = 0 ; i < dataSets; i++) {
-    data.push({
-       data: getRandomData(100, false, points),
-       label: 'Device ' + (1 + i),
-       backgroundColor: pxbColorWheel[i],
-    });
-  }
-  return data;
+function createBarChartData(dataSets: number, points: number): ChartDataSets[] {
+   const data: ChartDataSets[] = [];
+   for (let i = 0 ; i < dataSets; i++) {
+      data.push({
+         data: getRandomData(100, false, points),
+         label: 'Device ' + (1 + i),
+         backgroundColor: pxbColorWheel[i],
+      });
+   }
+   return data;
 }

@@ -1,8 +1,9 @@
+import {ChartDataSets, ChartOptions} from "chart.js";
 import {Helvetica, pxbColors} from '../util/styles';
 import {getRandomData} from '../util/utilities';
 
-export const pxbLineChartLabels: string[] = ['Jan', 'Feb', 'Marc', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-export const pxbLineChartData = [
+export const pxbLineChartLabels = ['Jan', 'Feb', 'Marc', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+export const pxbLineChartData: ChartDataSets[] = [
    {
      data: getRandomData(100, false, 12),
       label: 'Device 1',
@@ -25,7 +26,7 @@ export const pxbLineChartData = [
       backgroundColor: pxbColors.blue[200]
    }
 ];
-export const pxbLineChartOptions = {
+export const pxbLineChartOptions: ChartOptions = {
   elements: {
     line: {
       tension: 0

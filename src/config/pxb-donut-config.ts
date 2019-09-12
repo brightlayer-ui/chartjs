@@ -1,6 +1,7 @@
+import {ChartDataSets, ChartOptions} from "chart.js";
 import {pxbColors, pxbColorWheel} from '../util/styles';
 
-export const pxbDonutChartOptions = {
+export const pxbDonutChartOptions: ChartOptions = {
    cutoutPercentage: 75,
    responsive: true,
    legend: {
@@ -10,7 +11,7 @@ export const pxbDonutChartOptions = {
 
 export const pxbDonutChartLabels = ['Device 1', 'Device 2', 'Device 3'];
 
-export const pxbDonutChartData = [
+export const pxbDonutChartData: ChartDataSets[] = [
    {
       data: [10.85, 11.84, 61.41],
       backgroundColor: pxbColorWheel,
