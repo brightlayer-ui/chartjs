@@ -18,7 +18,7 @@ rm -rf "./node_modules/@pxblue/chartjs"
 mkdir "./node_modules/@pxblue/chartjs"
 echo -e "${GREEN}Done${NC}"
 
-echo -en "${BLUE}Copying angular themes into node_modules...\n${NC}";
+echo -en "${BLUE}Copying @pxb/chartjs into node_modules...\n${NC}";
 cp -r ./../package.json ./node_modules/@pxblue/chartjs/package.json
 cp -r ./../dist ./node_modules/@pxblue/chartjs
 
