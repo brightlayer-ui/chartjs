@@ -17,7 +17,7 @@ export function createBarChartConfig(): ChartConfiguration {
   };
 }
 
-export function createPieChart(): ChartConfiguration {
+export function createPieChartConfig(): ChartConfiguration {
   return {
      type: 'pie',
      data: {
@@ -28,7 +28,7 @@ export function createPieChart(): ChartConfiguration {
   };
 }
 
-export function createLineChart(): ChartConfiguration {
+export function createLineChartConfig(): ChartConfiguration {
   return {
      type: 'line',
      data: {

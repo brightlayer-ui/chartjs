@@ -1,5 +1,5 @@
 import React, { Component }  from 'react';
-import {drawChart, createLineChart} from '@pxblue/chartjs';
+import {drawChart, createLineChartConfig} from '@pxblue/chartjs';
 
 export default class LineDemo extends Component {
    render() {
@@ -11,6 +11,6 @@ export default class LineDemo extends Component {
    }
 
    componentDidMount() {
-      drawChart(createLineChart(), 'lineDemo');
+      drawChart(createLineChartConfig(), 'lineDemo');
    }
 }

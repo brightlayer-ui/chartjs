@@ -1,5 +1,5 @@
 import React, { Component }  from 'react';
-import {drawChart, createPieChart} from '@pxblue/chartjs';
+import {drawChart, createPieChartConfig} from '@pxblue/chartjs';
 
 export default class PieDemo extends Component {
    render() {
@@ -11,6 +11,6 @@ export default class PieDemo extends Component {
    }
 
    componentDidMount() {
-      drawChart(createPieChart(), 'pieChart');
+      drawChart(createPieChartConfig(), 'pieChart');
    }
 }

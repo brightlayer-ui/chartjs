@@ -10,7 +10,7 @@ BGREEN='\033[1;32m' #BOLD
 GRAY='\033[1;30m'
 NC='\033[0m' # No Color
 
-echo -en "${BLUE}Building ChartJS...\n${NC}"
+echo -en "${BLUE}Building @pxblue/chartjs...\n${NC}"
 cd .. && tsc && cd demo-react
 
 echo -en "${BLUE}Creating new folder in node_modules...\n${NC}"

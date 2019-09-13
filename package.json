@@ -1,12 +1,21 @@
 {
   "name": "@pxblue/chartjs",
+  "author": "PX Blue <pxblue@eaton.com>",
+  "license": "BSD-3-Clause",
   "version": "0.0.1",
-  "description": "Base configurations for assorted ChartJS graph types for PX Blue.",
+  "description": "PXBlue ChartJS configuration objects",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "prepublish": "tsc",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./buildTest.sh",
+    "build:react": "cd demo-react && yarn build && cd ..",
+    "build:angular": "cd demo-angular && yarn build && cd ..",
+    "build:all": "yarn build:react && yarn build:angular",
+    "publish:full": "yarn build:all && npm version patch && npm publish",
+    "link:angular": "cd angular && yarn link:chartjsnp",
+    "start:angular": "cd angular && yarn start",
+    "link:react": "cd react && yarn link:chartjs",
+    "start:react": "cd react && yarn start"
   },
   "repository": {
     "type": "git",
@@ -23,8 +32,6 @@
     "ChartJS",
     "Graph"
   ],
-  "author": "pxblue <pxblue@eaton.com>",
-  "license": "BSD-3-Clause",
   "bugs": {
     "url": "https://github.com/pxblue/chartjs/issues"
   },
