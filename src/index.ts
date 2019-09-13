@@ -26,7 +26,7 @@ export function createPieChartConfig(): ChartConfiguration {
         labels: pxbPieChartLabels,
         datasets: pxbPieChartData
      },
-     options: Object.assign({}, pxbPieChartOptions)
+     options: pxbPieChartOptions
   });
 }
 
