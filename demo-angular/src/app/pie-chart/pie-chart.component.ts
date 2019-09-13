@@ -7,10 +7,7 @@ import {drawChart, createPieChartConfig} from "@pxblue/chartjs";
 })
 export class PieChartComponent implements OnInit {
 
-   pieChart;
-
   ngOnInit(): void {
      drawChart(createPieChartConfig(), 'pieChart');
-     const config = createPieChartConfig();
   }
 }

@@ -24,7 +24,8 @@
   "dependencies": {
     "@pxblue/colors": "^1.0.9",
     "@types/chart.js": "^2.8.5",
-    "chart.js": "^2.8.0"
+    "chart.js": "^2.8.0",
+    "deepcopy": "^2.0.0"
   },
   "keywords": [
     "Visualization",
