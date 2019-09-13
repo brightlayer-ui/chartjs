@@ -1,5 +1,5 @@
 import React, { Component }  from 'react';
-import {PxbChartJsUtils} from "@pxblue/chartjs";
+import {drawChart, createDonutChartConfig} from '@pxblue/chartjs';
 
 export default class DonutDemo extends Component {
    render() {
@@ -11,6 +11,6 @@ export default class DonutDemo extends Component {
    }
 
    componentDidMount() {
-      PxbChartJsUtils.drawChart(PxbChartJsUtils.createDonutChartConfig(), 'donutChart');
+      drawChart(createDonutChartConfig(), 'donutChart');
    }
 }

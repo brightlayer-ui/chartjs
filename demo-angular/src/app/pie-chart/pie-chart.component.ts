@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {PxbChartJsUtils} from '@pxblue/chartjs';
+import {drawChart, createPieChart} from "@pxblue/chartjs";
 
 @Component({
   selector: 'app-pie-chart',
@@ -10,6 +10,6 @@ export class PieChartComponent implements OnInit {
    pieChart;
 
   ngOnInit(): void {
-     PxbChartJsUtils.drawChart(PxbChartJsUtils.createPieChart(), 'pieChart');
+     drawChart(createPieChart(), 'pieChart');
   }
 }

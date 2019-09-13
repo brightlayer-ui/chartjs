@@ -1,5 +1,5 @@
 import React, { Component }  from 'react';
-import {PxbChartJsUtils} from "@pxblue/chartjs";
+import {drawChart, createPieChart} from '@pxblue/chartjs';
 
 export default class PieDemo extends Component {
    render() {
@@ -11,6 +11,6 @@ export default class PieDemo extends Component {
    }
 
    componentDidMount() {
-      PxbChartJsUtils.drawChart(PxbChartJsUtils.createPieChart(), 'pieChart');
+      drawChart(createPieChart(), 'pieChart');
    }
 }

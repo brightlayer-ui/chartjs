@@ -1,5 +1,5 @@
 import React, { Component }  from 'react';
-import {PxbChartJsUtils} from "@pxblue/chartjs";
+import {drawChart, createBarChartConfig} from '@pxblue/chartjs';
 
 export default class BarDemo extends Component {
    render() {
@@ -11,6 +11,6 @@ export default class BarDemo extends Component {
    }
 
    componentDidMount() {
-      PxbChartJsUtils.drawChart(PxbChartJsUtils.createBarChartConfig(), 'barDemo');
+      drawChart(createBarChartConfig(), 'barDemo');
    }
 }

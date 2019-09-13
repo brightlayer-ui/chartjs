@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import * as PXBColors from '@pxblue/colors';
-import {PxbChartJsUtils} from '@pxblue/chartjs';
+import {drawChart, createDonutChartConfig} from "@pxblue/chartjs";
 
 @Component({
   selector: 'app-donut',
@@ -11,8 +11,8 @@ export class DonutComponent implements OnInit {
   colors = [PXBColors.blue[900], PXBColors.blue[500], PXBColors.blue[200]];
 
   ngOnInit(): void {
-    const config = PxbChartJsUtils.createDonutChartConfig();
+    const config = createDonutChartConfig();
     config.data.datasets[0].backgroundColor = this.colors;
-    PxbChartJsUtils.drawChart(config, 'donutChart');
+    drawChart(config, 'donutChart');
   }
 }
