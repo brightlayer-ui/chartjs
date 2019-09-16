@@ -1,6 +1,6 @@
 // @ts-ignore
 import * as PXBColors from '@pxblue/colors';
-export const Helvetica = 'Helvetica';
+export const OpenSans = 'Open Sans';
 
 export const pxbColorWheel = [
   PXBColors.blue[500],
