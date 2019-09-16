@@ -12,10 +12,9 @@
     "build:angular": "cd demo-angular && yarn build && cd ..",
     "build:all": "yarn build:react && yarn build:angular",
     "publish:full": "yarn build:all && npm version patch && npm publish",
-    "link:angular": "cd angular && yarn link:chartjsnp",
-    "start:angular": "cd angular && yarn start",
-    "link:react": "cd react && yarn link:chartjs",
-    "start:react": "cd react && yarn start"
+    "linkscript": "./link.sh",
+    "start:angular": "yarn linkscript && cd demo-angular && yarn start",
+    "start:react": "yarn linkscript && cd demo-react && yarn start"
   },
   "repository": {
     "type": "git",
