@@ -5,17 +5,19 @@
 This package contains basic support for ChartJS line, pie, bar, and donut graphs for use with PX Blue. 
 
 ## Installation
-Install with npm
-```
-npm install --save @pxblue/chartjs
-```
-or yarn
+Install with yarn
 ```
 yarn add @pxblue/chartjs
 ```
 
 ## Basic Usage
-To use this library, import the chart generator functions from the package:
+
+To use this library, specify in your HTML where you want your graph to be rendered: 
+```
+<canvas id="graphId"></canvas>
+```
+
+Import the chart generator functions from the package:
 
 ```
 import { 
@@ -27,15 +29,17 @@ import {
 } from '@pxblue/chartjs'; 
 ```
 
-and then use them as placeholders in your application.
+and then use these functions create PXBlue-themed chart configurations.
 
 ```
 import { createLineChartConfig, drawChart } from '@pxblue/chartjs'
 ...
 const lineChartConfig = createLineChartConfig();
-drawChart(lineChartConfig);
+drawChart(lineChartConfig, 'graphId');
 ```
-This will use default sample data to render a chart in your application. Read the following section for instructions on specifying your own configuration/data.
+This will use default sample data to render a chart in your application.  
+
+Read the following section for instructions on specifying your own configuration/data.
 
 For more detailed instructions on using ChartJS in your application, see our demos for [Angular](https://stackblitz.com/github/pxblue/chartjs/tree/master/demo-angular) or [React](https://codesandbox.io/s/github/pxblue/chartjs/tree/master/demo-react).
 
@@ -45,12 +49,9 @@ When you are ready to customize charts of your own, you can modify the returned 
 ```
 import { createPieChartConfig, drawChart } from '@pxblue/chartjs';
 ...
-const pieChartConfig = createPieChart();
-const dataset = [{
-   data: [5, 50, 30, 15],
-   backgroundColor: ['green', 'blue', 'red', 'yellow']
-}];
-drawChart(pieChartConfig);
+const config = createPieChartConfig();
+config.data.datasets[0].backgroundColor = ['red', 'blue', 'green'];
+drawChart(config, 'pie-chart-id');
 
 ```
 This configuration object will accept any property than can be supplied to a standard ChartJS config object ([API Reference](https://www.chartjs.org/docs/latest/)).
