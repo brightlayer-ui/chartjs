@@ -6,7 +6,10 @@ This is a sample application demonstrating the PXBlue ChartJS library.
 ## Running the Example
 ```
 git clone https://github.com/pxblue/chartjs
-yarn start:react
+yarn install
+cd demo-react
+yarn install
+yarn start
 ```
 > **NOTE**: running the demo will use the latest src files from the repository and NOT the themes that are published on NPM.
 
