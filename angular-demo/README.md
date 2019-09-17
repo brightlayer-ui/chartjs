@@ -7,7 +7,7 @@ This is a sample application demonstrating the PXBlue ChartJS library.
 ```
 git clone https://github.com/pxblue/chartjs
 yarn install
-cd demo-angular
+cd angular-demo
 yarn install
 yarn start
 ```
