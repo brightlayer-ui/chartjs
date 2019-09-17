@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1eb62248.chunk.css",
+    "main.js": "/static/js/main.13ad9bb8.chunk.js",
+    "main.js.map": "/static/js/main.13ad9bb8.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.c243eae1.js",
+    "runtime~main.js.map": "/static/js/runtime~main.c243eae1.js.map",
+    "static/css/2.90ec2976.chunk.css": "/static/css/2.90ec2976.chunk.css",
+    "static/js/2.30c91e59.chunk.js": "/static/js/2.30c91e59.chunk.js",
+    "static/js/2.30c91e59.chunk.js.map": "/static/js/2.30c91e59.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.6ea9ed23732ab7e5148399f980fa5426.js": "/precache-manifest.6ea9ed23732ab7e5148399f980fa5426.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.90ec2976.chunk.css.map": "/static/css/2.90ec2976.chunk.css.map",
+    "static/css/main.1eb62248.chunk.css.map": "/static/css/main.1eb62248.chunk.css.map",
+    "static/media/index.css": "/static/media/open-sans-latin-800italic.c62c3eea.woff2"
+  }
+}

@@ -14,13 +14,13 @@
   ],
   "scripts": {
     "test": "./buildTest.sh",
-    "build:react": "cd demo-react && yarn build && cd ..",
-    "build:angular": "cd demo-angular && yarn build && cd ..",
+    "build:react": "cd react-demo && yarn build && cd ..",
+    "build:angular": "cd angular-demo && yarn build && cd ..",
     "build:all": "yarn build:react && yarn build:angular",
     "publish:full": "yarn build:all && npm version patch && npm publish",
     "linkscript": "./link.sh",
-    "start:angular": "yarn linkscript && cd demo-angular && yarn start",
-    "start:react": "yarn linkscript && cd demo-react && yarn start"
+    "start:angular": "yarn linkscript && cd angular-demo && yarn start",
+    "start:react": "yarn linkscript && cd react-demo && yarn start"
   },
   "repository": {
     "type": "git",

@@ -15,7 +15,7 @@ tsc
 echo -e "${GREEN}Done${NC}"
 
 echo -en "${BLUE}Creating new folder in node_modules... (react)\n${NC}"
-cd demo-react
+cd react-demo
 rm -rf "./node_modules/@pxblue/chartjs"
 mkdir "./node_modules/@pxblue/chartjs"
 echo -e "${GREEN}Done${NC}"
@@ -26,7 +26,7 @@ cp -r ./../dist ./node_modules/@pxblue/chartjs
 echo -e "${GREEN}Done${NC}"
 
 echo -en "${BLUE}Creating new folder in node_modules... (angular)\n${NC}"
-cd ../demo-angular
+cd ../angular-demo
 rm -rf "./node_modules/@pxblue/chartjs"
 mkdir "./node_modules/@pxblue/chartjs"
 echo -e "${GREEN}Done${NC}"

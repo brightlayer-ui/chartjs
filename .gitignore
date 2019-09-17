@@ -6,7 +6,7 @@
 package-lock.json
 
 # development
-/demo-react/build
+/react-demo/build
 
 # testing
 /coverage
