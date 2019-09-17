@@ -20,7 +20,7 @@ rm -rf "./node_modules/@pxblue/chartjs"
 mkdir "./node_modules/@pxblue/chartjs"
 echo -e "${GREEN}Done${NC}"
 
-echo -en "${BLUE}Copying @pxb/chartjs into node_modules...(react)\n${NC}";
+echo -en "${BLUE}Copying @pxblue/chartjs into node_modules...(react)\n${NC}";
 cp -r ./../package.json ./node_modules/@pxblue/chartjs/package.json
 cp -r ./../dist ./node_modules/@pxblue/chartjs
 echo -e "${GREEN}Done${NC}"
@@ -31,7 +31,7 @@ rm -rf "./node_modules/@pxblue/chartjs"
 mkdir "./node_modules/@pxblue/chartjs"
 echo -e "${GREEN}Done${NC}"
 
-echo -en "${BLUE}Copying @pxb/chartjs into node_modules...(angular)\n${NC}";
+echo -en "${BLUE}Copying @pxblue/chartjs into node_modules...(angular)\n${NC}";
 cp -r ./../package.json ./node_modules/@pxblue/chartjs/package.json
 cp -r ./../dist ./node_modules/@pxblue/chartjs
 echo -e "${GREEN}Done${NC}"
