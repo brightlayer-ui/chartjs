@@ -41,7 +41,7 @@ This will use default sample data to render a chart in your application.
 
 Read the following section for instructions on specifying your own configuration/data.
 
-For more detailed instructions on using ChartJS in your application, see our demos for [Angular](https://stackblitz.com/github/pxblue/chartjs/tree/master/demo-angular) or [React](https://codesandbox.io/s/github/pxblue/chartjs/tree/master/demo-react).
+For more detailed instructions on using ChartJS in your application, see our demos for [Angular](https://stackblitz.com/github/pxblue/chartjs/tree/master/angular-demo) or [React](https://codesandbox.io/s/github/pxblue/chartjs/tree/master/react-demo).
 
 ## Advanced Usage
 When you are ready to customize charts of your own, you can modify the returned configuration object before drawing it. 
