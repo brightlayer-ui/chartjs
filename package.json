@@ -15,6 +15,7 @@
   "scripts": {
     "test": "echo 'no tests'",
     "test:build": "./buildTest.sh",
+    "build": "tsc",
     "build:react": "cd react-demo && yarn build && cd ..",
     "build:angular": "cd angular-demo && yarn build && cd ..",
     "build:all": "yarn build:react && yarn build:angular",
