@@ -7,7 +7,7 @@ jobs:
       - checkout
       - run: 
           name: Install Dependencies
-          command: yarn
+          command: yarn && cd angular-demo && yarn && cd ../react-demo && yarn
       - run:
           name: Test
           command: yarn test
