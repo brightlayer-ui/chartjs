@@ -13,7 +13,8 @@
     "README.md"
   ],
   "scripts": {
-    "test": "./buildTest.sh",
+    "test": "cd angular-demo && ng test",
+    "test:build": "./buildTest.sh",
     "build:react": "cd react-demo && yarn build && cd ..",
     "build:angular": "cd angular-demo && yarn build && cd ..",
     "build:all": "yarn build:react && yarn build:angular",
