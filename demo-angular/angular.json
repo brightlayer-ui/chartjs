@@ -36,6 +36,9 @@
             ]
           },
           "configurations": {
+            "es5": {
+              "tsConfig": "./tsconfig.es5.json"
+            },
             "production": {
               "fileReplacements": [
                 {
@@ -75,6 +78,9 @@
           "configurations": {
             "production": {
               "browserTarget": "pxblue-chartjs:build:production"
+            },
+            "es5": {
+              "browserTarget": "pxblue-chartjs:build:es5"
             }
           }
         },
