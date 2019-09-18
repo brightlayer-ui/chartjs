@@ -28,8 +28,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss",
+              "./node_modules/@pxblue/themes/angular/theme.scss",
               "./node_modules/typeface-open-sans",
+              "src/styles.scss"
             ],
             "scripts": [
               "node_modules/chart.js/dist/Chart.bundle.js"
@@ -102,6 +103,8 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@pxblue/themes/angular/theme.scss",
+              "./node_modules/typeface-open-sans",
               "src/styles.scss"
             ],
             "scripts": []

@@ -7,14 +7,15 @@ import LineDemo from "./graphs/LineDemo";
 import PieDemo from "./graphs/PieDemo";
 
 const App: React.FC = () => {
-  return (
-    <div className="App">
-       <PieDemo/>
-       <DonutDemo/>
-       <LineDemo />
-       <BarDemo/>
-    </div>
-  );
+
+   return (
+         <div className="App">
+            <PieDemo/>
+            <DonutDemo/>
+            <LineDemo/>
+            <BarDemo/>
+         </div>
+   );
 };
 
 export default App;
