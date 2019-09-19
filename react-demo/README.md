@@ -1,7 +1,7 @@
 # ChartJS Demo
 This is a sample application demonstrating the PXBlue ChartJS library.
 
-[View on CodeSandbox](https://codesandbox.io/s/github/pxblue/chartjs/tree/master/demo-react)
+[View on CodeSandbox](https://codesandbox.io/s/github/pxblue/chartjs/tree/master/react-demo)
 
 ## Running the Example
 ```
