@@ -5,7 +5,11 @@
 This package contains basic support for ChartJS line, pie, bar, and donut graphs for use with PX Blue. 
 
 ## Installation
-Install with yarn
+Install with npm
+```
+npm install --save @pxblue/chartjs
+```
+or yarn
 ```
 yarn add @pxblue/chartjs
 ```
@@ -41,8 +45,6 @@ This will use default sample data to render a chart in your application.
 
 Read the following section for instructions on specifying your own configuration/data.
 
-For more detailed instructions on using ChartJS in your application, see our demos for [Angular](https://stackblitz.com/github/pxblue/chartjs/tree/master/angular-demo) or [React](https://codesandbox.io/s/github/pxblue/chartjs/tree/master/react-demo).
-
 ## Advanced Usage
 When you are ready to customize charts of your own, you can modify the returned configuration object before drawing it. 
 
@@ -55,3 +57,9 @@ drawChart(config, 'pie-chart-id');
 
 ```
 This configuration object will accept any property than can be supplied to a standard ChartJS config object ([API Reference](https://www.chartjs.org/docs/latest/)).
+
+## Demos
+| Framework           | Live Examples  |
+| ---------------- |------------------|
+| Angular | [View on Stackblitz](https://stackblitz.com/github/pxblue/chartjs/tree/master/angular-demo)
+| React | [View on Code Sandbox](https://codesandbox.io/s/github/pxblue/themes/tree/master/react-demo)
