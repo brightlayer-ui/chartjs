@@ -62,4 +62,4 @@ This configuration object will accept any property than can be supplied to a sta
 | Framework           | Live Examples  |
 | ---------------- |------------------|
 | Angular | [View on Stackblitz](https://stackblitz.com/github/pxblue/chartjs/tree/master/angular-demo)
-| React | [View on Code Sandbox](https://codesandbox.io/s/github/pxblue/themes/tree/master/react-demo)
+| React | [View on Code Sandbox](https://codesandbox.io/s/github/pxblue/chartjs/tree/master/react-demo)
