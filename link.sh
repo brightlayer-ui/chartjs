@@ -10,42 +10,31 @@ BGREEN='\033[1;32m' #BOLD
 GRAY='\033[1;30m'
 NC='\033[0m' # No Color
 
-echo -en "${BLUE}Installing @pxblue/chartjs dependencies...\n${NC}"
+echo -e "${BLUE}Installing dependencies...${NC}"
 yarn install
+cd react-demo && yarn install
+cd ../angular-demo && yarn install
+cd ..
 echo -e "${GREEN}Done${NC}"
 
-echo -en "${BLUE}Building @pxblue/chartjs...\n${NC}"
-tsc
+echo -e "${BLUE}Building @pxblue/chartjs...${NC}"
+yarn build
 echo -e "${GREEN}Done${NC}"
 
-echo -en "${BLUE}Installing dependencies... (react)\n${NC}"
-cd react-demo
-yarn install
+
+echo -e "${BLUE}Creating new folders in node_modules...${NC}"
+rm -rf "./react-demo/node_modules/@pxblue/chartjs"
+mkdir "./react-demo/node_modules/@pxblue/chartjs"
+rm -rf "./angular-demo/node_modules/@pxblue/chartjs"
+mkdir "./angular-demo/node_modules/@pxblue/chartjs"
 echo -e "${GREEN}Done${NC}"
 
-echo -en "${BLUE}Creating new folder in node_modules... (react)\n${NC}"
-rm -rf "./node_modules/@pxblue/chartjs"
-mkdir "./node_modules/@pxblue/chartjs"
+echo -e "${BLUE}Linking @pxblue/chartjs into node_modules...${NC}";
+cp -r ./package.json ./react-demo/node_modules/@pxblue/chartjs/package.json
+cp -r ./package.json ./angular-demo/node_modules/@pxblue/chartjs/package.json
+cp -r ./dist ./react-demo/node_modules/@pxblue/chartjs
+cp -r ./dist ./angular-demo/node_modules/@pxblue/chartjs
+
 echo -e "${GREEN}Done${NC}"
 
-echo -en "${BLUE}Copying @pxblue/chartjs into node_modules...(react)\n${NC}";
-cp -r ./../package.json ./node_modules/@pxblue/chartjs/package.json
-cp -r ./../dist ./node_modules/@pxblue/chartjs
-echo -e "${GREEN}Done${NC}"
-
-echo -en "${BLUE}Installing dependencies... (angular)\n${NC}"
-cd ../angular-demo
-yarn install
-echo -e "${GREEN}Done${NC}"
-
-echo -en "${BLUE}Creating new folder in node_modules... (angular)\n${NC}"
-rm -rf "./node_modules/@pxblue/chartjs"
-mkdir "./node_modules/@pxblue/chartjs"
-echo -e "${GREEN}Done${NC}"
-
-echo -en "${BLUE}Copying @pxblue/chartjs into node_modules...(angular)\n${NC}";
-cp -r ./../package.json ./node_modules/@pxblue/chartjs/package.json
-cp -r ./../dist ./node_modules/@pxblue/chartjs
-echo -e "${GREEN}Done${NC}"
-
-echo -e "${GRAY}Complete${NC}\r\n"
+echo -e "${GRAY}Linking Complete${NC}\r\n"
