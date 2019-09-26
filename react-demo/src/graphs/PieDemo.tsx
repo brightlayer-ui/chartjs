@@ -5,7 +5,7 @@ export default class PieDemo extends Component {
 
    render() {
       return (
-         <div className="graph">
+         <div className="graph" style={{maxWidth: '300px'}}>
             <canvas id="pieChart"></canvas>
          </div>
       );

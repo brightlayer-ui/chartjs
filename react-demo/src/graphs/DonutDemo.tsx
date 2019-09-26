@@ -9,7 +9,7 @@ export default class DonutDemo extends Component {
 
    render() {
       return (
-         <div className="graph">
+         <div className="graph" style={{maxWidth: '400px'}}>
             <canvas id="donutChart"></canvas>
          </div>
       );
