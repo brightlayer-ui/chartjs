@@ -4,6 +4,7 @@ var pxb_barchart_config_1 = require("./config/pxb-barchart-config");
 var pxb_donut_config_1 = require("./config/pxb-donut-config");
 var pxb_linechart_config_1 = require("./config/pxb-linechart-config");
 var pxb_piechart_config_1 = require("./config/pxb-piechart-config");
+var styles_1 = require("./util/styles");
 var Chart = require("chart.js");
 // @ts-ignore
 var deepcopy = require("deepcopy");
@@ -53,6 +54,7 @@ function createDonutChartConfig() {
 }
 exports.createDonutChartConfig = createDonutChartConfig;
 function drawChart(config, id) {
+    Chart.defaults.global.defaultFontFamily = styles_1.OpenSans;
     var ctx = document.getElementById(id).getContext('2d');
     return new Chart(ctx, config);
 }

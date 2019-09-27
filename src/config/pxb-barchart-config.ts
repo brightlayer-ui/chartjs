@@ -9,8 +9,7 @@ export const pxbBarChartOptions: ChartOptions = {
    legend: {
       position: 'bottom',
       labels: {
-         usePointStyle: true,
-         fontFamily: OpenSans
+         usePointStyle: true
       }
    },
    scales: {
@@ -20,9 +19,6 @@ export const pxbBarChartOptions: ChartOptions = {
             scaleLabel: {
                display: true,
                labelString: 'Last 12 Months'
-            },
-            ticks: {
-               fontFamily: OpenSans
             }
          }
       ],
@@ -34,9 +30,6 @@ export const pxbBarChartOptions: ChartOptions = {
                display: true,
                labelString: 'Energy (kWh)'
             },
-            ticks: {
-               fontFamily: OpenSans
-            }
          }
       ]
    }
