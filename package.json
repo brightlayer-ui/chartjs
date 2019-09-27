@@ -2,7 +2,7 @@
   "name": "@pxblue/chartjs",
   "author": "PX Blue <pxblue@eaton.com>",
   "license": "BSD-3-Clause",
-  "version": "0.0.1-beta.0",
+  "version": "1.0.0",
   "description": "PXBlue ChartJS configuration objects",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
