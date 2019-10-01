@@ -39,16 +39,12 @@ export const pxbLineChartOptions: ChartOptions = {
    legend: {
       position: 'bottom',
       labels: {
-         boxWidth: 12,
-         fontFamily: OpenSans
+         boxWidth: 12
       }
    },
    scales: {
       xAxes: [
          {
-            ticks: {
-               fontFamily: OpenSans
-            },
             stacked: true,
             scaleLabel: {
                display: true,
@@ -57,11 +53,13 @@ export const pxbLineChartOptions: ChartOptions = {
          }
       ],
       yAxes: [
+
          {
-            ticks: {
-               fontFamily: OpenSans
-            },
-            barThickness: 20
+            barThickness: 20,
+            scaleLabel: {
+               display: true,
+               labelString: 'Numbers'
+            }
          }
       ]
    }
