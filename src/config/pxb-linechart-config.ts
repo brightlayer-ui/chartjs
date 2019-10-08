@@ -2,7 +2,7 @@ import {ChartDataSets, ChartOptions} from "chart.js";
 import {OpenSans, pxbColors} from '../util/styles';
 import {getRandomData} from '../util/utilities';
 
-export const pxbLineChartLabels = ['Jan', 'Feb', 'Marc', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+export const pxbLineChartLabels = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 export const pxbLineChartData: ChartDataSets[] = [
    {
       data: getRandomData(100, false, 12),
