@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var styles_1 = require("../util/styles");
 var utilities_1 = require("../util/utilities");
-exports.pxbLineChartLabels = ['Jan', 'Feb', 'Marc', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+exports.pxbLineChartLabels = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 exports.pxbLineChartData = [
     {
         data: utilities_1.getRandomData(100, false, 12),

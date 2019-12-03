@@ -2,7 +2,7 @@ import {ChartDataSets, ChartOptions} from "chart.js";
 import {OpenSans, pxbColorWheel} from '../util/styles';
 import {getRandomData} from "../util/utilities";
 
-export const pxbBarChartLabels = ['Jan', 'Feb', 'Marc', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+export const pxbBarChartLabels = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 export const pxbBarChartData = createBarChartData(3, 12);
 export const pxbBarChartOptions: ChartOptions = {
    responsive: true,
