@@ -19,7 +19,7 @@
     "@angular/material": "^8.2.0",
     "@angular/platform-browser": "~8.2.0",
     "@angular/platform-browser-dynamic": "~8.2.0",
-    "@pxblue/chartjs": "latest",
+    "@pxblue/chartjs": "^1.0.0",
     "@pxblue/colors": "^1.0.13",
     "@pxblue/themes": "^2.1.0",
     "@types/chart.js": "^2.8.5",
