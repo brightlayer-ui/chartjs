@@ -307,6 +307,14 @@
     tree-kill "1.2.1"
     webpack-sources "1.3.0"
 
+"@pxblue/angular-themes@^5.1.2":
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/@pxblue/angular-themes/-/angular-themes-5.1.2.tgz#87c093cfca9e62576afc4597bc7a28f083eb8e9d"
+  integrity sha512-rCjjXWoVjW+nJBpw4ZrlIxQnwKY8PfI1iX0bZDqyuVnNSHUEgJFQnzxNgyv/VYcZPeN39nXwAfvl6+5ZiWV4dA==
+  dependencies:
+    "@pxblue/colors" "^3.0.0"
+    typeface-open-sans "^0.0.75"
+
 "@pxblue/chartjs@^1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@pxblue/chartjs/-/chartjs-1.0.0.tgz#1335cd8b3b48e9d92ad0d305cbf433b12c17b313"
@@ -317,18 +325,22 @@
     chart.js "^2.8.0"
     deepcopy "^2.0.0"
 
-"@pxblue/colors@^1.0.13", "@pxblue/colors@^1.0.9":
+"@pxblue/colors@^1.0.9":
   version "1.0.13"
   resolved "https://registry.yarnpkg.com/@pxblue/colors/-/colors-1.0.13.tgz#1ed76734267f77dd4b390836f61d01439fc35132"
   integrity sha512-tneNNYclHmNNIbo6J7XXEumoJZLBXqeO2LFufWxRvIs5yeVVfaJN3zWREl1oo5KP67aDixYgEKB7LH0oeTL+lQ==
 
-"@pxblue/themes@^2.1.0":
-  version "2.2.4"
-  resolved "https://registry.yarnpkg.com/@pxblue/themes/-/themes-2.2.4.tgz#ef663d4625c35dc1a2dd813bb65963143b839db0"
-  integrity sha512-ji9tMpFsF4ZgKk3pkoepjymtBmgnlLjCycDd0W6pkps95SvznQFNXAFYhlAfr25m+IvSQTEQFlj7MrEluYBfLA==
+"@pxblue/colors@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@pxblue/colors/-/colors-3.0.0.tgz#080fb5cfd5a08fea018ece7cac8022ed38f7878f"
+  integrity sha512-rMFW4an1V9M5KX4BiNzrbbaYe2fic4o9iGL8/bPYvITbeiwgAapyFX0VbMIoo8XKlIbNaxyn7oWnrxzI/tp8Rw==
   dependencies:
-    "@pxblue/colors" "^1.0.13"
-    typeface-open-sans "^0.0.54"
+    "@pxblue/types" "^2.0.0"
+
+"@pxblue/types@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@pxblue/types/-/types-2.0.0.tgz#3df970352aca5256974a10a97d75a2264bad1eba"
+  integrity sha512-rHABCqYALGjrDxdCfw/v4mFsHhE9y9+vdSD3VHfIzA3HY1g1Bp/VWwEuEXWbtj2H5n75D+jkMQZ0rTqSKY3vLw==
 
 "@schematics/angular@8.2.2":
   version "8.2.2"
@@ -6702,11 +6714,6 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
-
-typeface-open-sans@^0.0.54:
-  version "0.0.54"
-  resolved "https://registry.yarnpkg.com/typeface-open-sans/-/typeface-open-sans-0.0.54.tgz#20f5b5ea5c7f95d89dc1f8b2d2b1457680129cee"
-  integrity sha512-w6wOd6EicZdZKf0jSU/K3EzEi3zFgvWQSN7NOpRIQI5KeMWmC5Pg/lqtBVJHB0pRChYRmLdhf4h8ROur0A3JZQ==
 
 typeface-open-sans@^0.0.75:
   version "0.0.75"
