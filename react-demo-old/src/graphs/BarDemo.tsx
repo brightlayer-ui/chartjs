@@ -17,11 +17,8 @@ export default class BarDemo extends Component {
 
    componentDidMount() {
       const config = createBarChartConfig();
-      // @ts-ignore
       config.data.datasets[0].backgroundColor = this.colors[0];
-      // @ts-ignore
       config.data.datasets[1].backgroundColor = this.colors[1];
-      // @ts-ignore
       config.data.datasets[2].backgroundColor = this.colors[2];
       drawChart(config, 'barDemo');
    }
