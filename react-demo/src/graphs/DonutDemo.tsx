@@ -17,6 +17,7 @@ export default class DonutDemo extends Component {
 
    componentDidMount() {
       const config = createDonutChartConfig();
+      // @ts-ignore
       config.data.datasets[0].backgroundColor = this.colors;
       drawChart(config, 'donutChart');
    }
