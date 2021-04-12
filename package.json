@@ -18,7 +18,8 @@
     "build": "tsc",
     "linkscript": "./link.sh",
     "start:angular": "yarn linkscript && cd angular-demo && yarn start",
-    "start:react": "yarn linkscript && cd react-demo && yarn start"
+    "start:react": "yarn linkscript && cd react-demo && yarn start",
+    "prettier": "prettier \"src/**/**.{ts,tsx,js,jsx,json,css,scss,html,md}\" --write"
   },
   "repository": {
     "type": "git",
@@ -31,8 +32,11 @@
     "deepcopy": "^2.0.0"
   },
   "devDependencies": {
+    "@pxblue/prettier-config": "^1.0.2",
+    "prettier": "^2.2.1",
     "typescript": "^3.6.3"
   },
+  "prettier": "@pxblue/prettier-config",
   "keywords": [
     "Visualization",
     "PXBlue",
