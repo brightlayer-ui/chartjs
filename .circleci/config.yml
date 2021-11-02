@@ -50,7 +50,7 @@ jobs:
             - run:
                   name: Tag @brightlayer-ui/chartjs
                   command: |
-                      yarn tag:package -b $CIRCLE_BRANCH -s blui-chartjs
+                      yarn tag:package -b $CIRCLE_BRANCH -s -blui-chartjs
 
 workflows:
     version: 2
