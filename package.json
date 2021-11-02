@@ -2,7 +2,7 @@
     "name": "@brightlayer-ui/chartjs",
     "author": "Brightlayer UI <brightlayer-ui@eaton.com>",
     "license": "BSD-3-Clause",
-    "version": "1.0.0",
+    "version": "1.0.0-beta.1",
     "description": "Brightlayer UI ChartJS configuration objects",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
@@ -34,7 +34,7 @@
         "deepcopy": "^2.0.0"
     },
     "devDependencies": {
-        "@brightlayer-ui/prettier-config": "^1.0.2",
+        "@brightlayer-ui/prettier-config": "^1.0.3",
         "prettier": "^2.2.1",
         "typescript": "^3.6.3"
     },
