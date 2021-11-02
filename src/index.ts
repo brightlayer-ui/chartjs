@@ -7,10 +7,10 @@ This code is licensed under the BSD-3 license found in the LICENSE file in the r
 **/
 
 import { ChartConfiguration } from 'chart.js';
-import { pxbBarChartData, pxbBarChartLabels, pxbBarChartOptions } from './config/pxb-barchart-config';
-import { pxbDonutChartData, pxbDonutChartLabels, pxbDonutChartOptions } from './config/pxb-donut-config';
-import { pxbLineChartData, pxbLineChartLabels, pxbLineChartOptions } from './config/pxb-linechart-config';
-import { pxbPieChartData, pxbPieChartLabels, pxbPieChartOptions } from './config/pxb-piechart-config';
+import { bluiBarChartData, bluiBarChartLabels, bluiBarChartOptions } from './config/blui-barchart-config';
+import { bluiDonutChartData, bluiDonutChartLabels, bluiDonutChartOptions } from './config/blui-donut-config';
+import { bluiLineChartData, bluiLineChartLabels, bluiLineChartOptions } from './config/blui-linechart-config';
+import { bluiPieChartData, bluiPieChartLabels, bluiPieChartOptions } from './config/blui-piechart-config';
 import { OpenSans } from './util/styles';
 import Chart = require('chart.js');
 // @ts-ignore
@@ -21,10 +21,10 @@ export function createBarChartConfig(): ChartConfiguration {
     return deepcopy({
         type: 'bar',
         data: {
-            labels: pxbBarChartLabels,
-            datasets: pxbBarChartData,
+            labels: bluiBarChartLabels,
+            datasets: bluiBarChartData,
         },
-        options: pxbBarChartOptions,
+        options: bluiBarChartOptions,
     });
 }
 
@@ -32,10 +32,10 @@ export function createPieChartConfig(): ChartConfiguration {
     return deepcopy({
         type: 'pie',
         data: {
-            labels: pxbPieChartLabels,
-            datasets: pxbPieChartData,
+            labels: bluiPieChartLabels,
+            datasets: bluiPieChartData,
         },
-        options: pxbPieChartOptions,
+        options: bluiPieChartOptions,
     });
 }
 
@@ -43,10 +43,10 @@ export function createLineChartConfig(): ChartConfiguration {
     return deepcopy({
         type: 'line',
         data: {
-            labels: pxbLineChartLabels,
-            datasets: pxbLineChartData,
+            labels: bluiLineChartLabels,
+            datasets: bluiLineChartData,
         },
-        options: pxbLineChartOptions,
+        options: bluiLineChartOptions,
     });
 }
 
@@ -54,10 +54,10 @@ export function createDonutChartConfig(): ChartConfiguration {
     return deepcopy({
         type: 'doughnut',
         data: {
-            labels: pxbDonutChartLabels,
-            datasets: pxbDonutChartData,
+            labels: bluiDonutChartLabels,
+            datasets: bluiDonutChartData,
         },
-        options: pxbDonutChartOptions,
+        options: bluiDonutChartOptions,
     });
 }
 
