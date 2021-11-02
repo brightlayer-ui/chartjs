@@ -1,52 +1,52 @@
 {
-  "name": "@pxblue/chartjs",
-  "author": "PX Blue <pxblue@eaton.com>",
-  "license": "BSD-3-Clause",
-  "version": "1.0.0",
-  "description": "PXBlue ChartJS configuration objects",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "files": [
-    "dist/**",
-    "package.json",
-    "LICENSE",
-    "README.md"
-  ],
-  "scripts": {
-    "test": "echo 'no tests'",
-    "test:build": "./buildTest.sh",
-    "build": "tsc",
-    "linkscript": "./link.sh",
-    "prettier": "prettier \"src/**/**.{ts,tsx,js,jsx,json,css,scss,html,md}\" --write",
-    "publish:package": "set npm_config_yes=true && npx -p @pxblue/publish pxb-publish",
-    "start:angular": "yarn linkscript && cd angular-demo && yarn start",
-    "start:react": "yarn linkscript && cd react-demo && yarn start",
-    "tag:package": "npx -p @pxblue/tag pxb-tag"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/pxblue/chartjs.git"
-  },
-  "dependencies": {
-    "@pxblue/colors": "^1.0.9",
-    "@types/chart.js": "^2.8.5",
-    "chart.js": "^2.8.0",
-    "deepcopy": "^2.0.0"
-  },
-  "devDependencies": {
-    "@pxblue/prettier-config": "^1.0.2",
-    "prettier": "^2.2.1",
-    "typescript": "^3.6.3"
-  },
-  "prettier": "@pxblue/prettier-config",
-  "keywords": [
-    "Visualization",
-    "PXBlue",
-    "ChartJS",
-    "Graph"
-  ],
-  "bugs": {
-    "url": "https://github.com/pxblue/chartjs/issues"
-  },
-  "homepage": "https://github.com/pxblue/chartjs#readme"
+    "name": "@brightlayer-ui/chartjs",
+    "author": "Brightlayer UI <brightlayer-ui@eaton.com>",
+    "license": "BSD-3-Clause",
+    "version": "1.0.0",
+    "description": "Brightlayer UI ChartJS configuration objects",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist/**",
+        "package.json",
+        "LICENSE",
+        "README.md"
+    ],
+    "scripts": {
+        "test": "echo 'no tests'",
+        "test:build": "./buildTest.sh",
+        "build": "tsc",
+        "linkscript": "./link.sh",
+        "prettier": "prettier \"src/**/**.{ts,tsx,js,jsx,json,css,scss,html,md}\" --write",
+        "publish:package": "set npm_config_yes=true && npx -p @brightlayer-ui/publish blui-publish",
+        "start:angular": "yarn linkscript && cd angular-demo && yarn start",
+        "start:react": "yarn linkscript && cd react-demo && yarn start",
+        "tag:package": "npx -p @brightlayer-ui/tag blui-tag"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/brightlayer-ui/chartjs.git"
+    },
+    "dependencies": {
+        "@brightlayer-ui/colors": "^3.0.1",
+        "@types/chart.js": "^2.8.5",
+        "chart.js": "^2.8.0",
+        "deepcopy": "^2.0.0"
+    },
+    "devDependencies": {
+        "@brightlayer-ui/prettier-config": "^1.0.2",
+        "prettier": "^2.2.1",
+        "typescript": "^3.6.3"
+    },
+    "prettier": "@brightlayer-ui/prettier-config",
+    "keywords": [
+        "Visualization",
+        "Brightlayer-UI",
+        "ChartJS",
+        "Graph"
+    ],
+    "bugs": {
+        "url": "https://github.com/brightlayer-ui/chartjs/issues"
+    },
+    "homepage": "https://github.com/brightlayer-ui/chartjs#readme"
 }

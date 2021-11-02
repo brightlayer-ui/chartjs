@@ -1,10 +1,10 @@
 import { ChartDataSets, ChartOptions } from 'chart.js';
-import { OpenSans, pxbColorWheel } from '../util/styles';
+import { bluiColorWheel } from '../util/styles';
 import { getRandomData } from '../util/utilities';
 
-export const pxbBarChartLabels = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-export const pxbBarChartData = createBarChartData(3, 12);
-export const pxbBarChartOptions: ChartOptions = {
+export const bluiBarChartLabels = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+export const bluiBarChartData = createBarChartData(3, 12);
+export const bluiBarChartOptions: ChartOptions = {
     responsive: true,
     legend: {
         position: 'bottom',
@@ -41,7 +41,7 @@ function createBarChartData(dataSets: number, points: number): ChartDataSets[] {
         data.push({
             data: getRandomData(100, false, points),
             label: 'Device ' + (1 + i),
-            backgroundColor: pxbColorWheel[i],
+            backgroundColor: bluiColorWheel[i],
         });
     }
     return data;

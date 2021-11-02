@@ -1,32 +1,32 @@
 import { ChartDataSets, ChartOptions } from 'chart.js';
-import { OpenSans, pxbColors } from '../util/styles';
+import { bluiColors } from '../util/styles';
 import { getRandomData } from '../util/utilities';
 
-export const pxbLineChartLabels = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-export const pxbLineChartData: ChartDataSets[] = [
+export const bluiLineChartLabels = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+export const bluiLineChartData: ChartDataSets[] = [
     {
         data: getRandomData(100, false, 12),
         label: 'Device 1',
         fill: false,
-        borderColor: pxbColors.blue[900],
-        backgroundColor: pxbColors.blue[900],
+        borderColor: bluiColors.blue[900],
+        backgroundColor: bluiColors.blue[900],
     },
     {
         data: getRandomData(20, false, 12),
         label: 'Device 2',
         fill: false,
-        borderColor: pxbColors.blue[200],
-        backgroundColor: pxbColors.blue[200],
+        borderColor: bluiColors.blue[200],
+        backgroundColor: bluiColors.blue[200],
     },
     {
         data: getRandomData(20, false, 12),
         label: 'Device 3',
         fill: false,
-        borderColor: pxbColors.blue[200],
-        backgroundColor: pxbColors.blue[200],
+        borderColor: bluiColors.blue[200],
+        backgroundColor: bluiColors.blue[200],
     },
 ];
-export const pxbLineChartOptions: ChartOptions = {
+export const bluiLineChartOptions: ChartOptions = {
     elements: {
         line: {
             tension: 0,
