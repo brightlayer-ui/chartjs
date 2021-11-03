@@ -1,20 +1,19 @@
 import { Component, OnInit } from '@angular/core';
-import * as PXBColors from '@pxblue/colors';
-import {drawChart, createLineChartConfig} from "@pxblue/chartjs";
+import * as BLUIColors from '@brightlayer-ui/colors';
+import { drawChart, createLineChartConfig } from '@brightlayer-ui/chartjs';
 
 @Component({
-  selector: 'app-line-chart',
-  templateUrl: './line-chart.component.html'
+    selector: 'app-line-chart',
+    templateUrl: './line-chart.component.html',
 })
 export class LineChartComponent implements OnInit {
+    colors = [BLUIColors.blue[500], BLUIColors.blue[200], BLUIColors.blue[200]];
 
-   colors = [PXBColors.blue[500], PXBColors.blue[200], PXBColors.blue[200]];
-
-   ngOnInit(): void {
-      const config = createLineChartConfig();
-      config.data.datasets[0].backgroundColor = this.colors[0];
-      config.data.datasets[1].backgroundColor = this.colors[1];
-      config.data.datasets[2].backgroundColor = this.colors[2];
-      drawChart(config, 'lineChart');
-   }
+    ngOnInit(): void {
+        const config = createLineChartConfig();
+        config.data.datasets[0].backgroundColor = this.colors[0];
+        config.data.datasets[1].backgroundColor = this.colors[1];
+        config.data.datasets[2].backgroundColor = this.colors[2];
+        drawChart(config, 'lineChart');
+    }
 }
