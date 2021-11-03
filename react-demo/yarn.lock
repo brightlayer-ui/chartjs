@@ -1143,6 +1143,28 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
+"@brightlayer-ui/chartjs@^1.0.0-beta.0":
+  version "1.0.0-beta.0"
+  resolved "https://registry.yarnpkg.com/@brightlayer-ui/chartjs/-/chartjs-1.0.0-beta.0.tgz#ddac00bde9e26718f6f02d9691066698ce848389"
+  integrity sha512-grv6wAp3Jse7CIkG7ddN/TeuyZrdVjnsIY1FHXDJhET1NWtZ0juOXDhVoRRK13GfP3t1z377CZzlF/s6wq9Ojg==
+  dependencies:
+    "@brightlayer-ui/colors" "^3.0.1"
+    "@types/chart.js" "^2.8.5"
+    chart.js "^2.8.0"
+    deepcopy "^2.0.0"
+
+"@brightlayer-ui/colors@^3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@brightlayer-ui/colors/-/colors-3.0.1.tgz#f085acf6b6b4266a01798c78bc25841d15e44b3e"
+  integrity sha512-AE9F6FN1EQWMoqFTak6q8MN3wg9et2u2SUs6HjYhcS3GVSHjMWVSsuJZ2aD5Lu9409Gfi6pBHDWsJZ5PyeLsdQ==
+  dependencies:
+    "@brightlayer-ui/types" "^2.0.0"
+
+"@brightlayer-ui/types@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@brightlayer-ui/types/-/types-2.0.0.tgz#d8adc0cdb96c164943adbad6e74043128a8b4112"
+  integrity sha512-DTCVwND6YC9qrkQl7pkFlN6QxDReJHtjuAiFU9HkXJN368vlw+fzHQ5/j4sB1sZl2eNwOgccv5ecl2XrlolOCw==
+
 "@cnakazawa/watch@^1.0.3":
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/@cnakazawa/watch/-/watch-1.0.4.tgz#f864ae85004d0fcab6f50be9141c4da368d1656a"
@@ -1510,21 +1532,6 @@
     native-url "^0.2.6"
     schema-utils "^2.6.5"
     source-map "^0.7.3"
-
-"@pxblue/chartjs@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@pxblue/chartjs/-/chartjs-1.0.0.tgz#1335cd8b3b48e9d92ad0d305cbf433b12c17b313"
-  integrity sha512-eJBeXa3SARnVusB2xeth9RP/VlHioAmkkMpjYYxOSeXDOT9aBFdKtDTDOR9r8mUBBWRYcI0giCuG+io34qfG4Q==
-  dependencies:
-    "@pxblue/colors" "^1.0.9"
-    "@types/chart.js" "^2.8.5"
-    chart.js "^2.8.0"
-    deepcopy "^2.0.0"
-
-"@pxblue/colors@^1.0.9":
-  version "1.0.13"
-  resolved "https://registry.yarnpkg.com/@pxblue/colors/-/colors-1.0.13.tgz#1ed76734267f77dd4b390836f61d01439fc35132"
-  integrity sha512-tneNNYclHmNNIbo6J7XXEumoJZLBXqeO2LFufWxRvIs5yeVVfaJN3zWREl1oo5KP67aDixYgEKB7LH0oeTL+lQ==
 
 "@pxblue/colors@^3.0.0":
   version "3.0.0"

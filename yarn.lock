@@ -2,10 +2,22 @@
 # yarn lockfile v1
 
 
-"@pxblue/colors@^1.0.9":
-  version "1.0.13"
-  resolved "https://registry.yarnpkg.com/@pxblue/colors/-/colors-1.0.13.tgz#1ed76734267f77dd4b390836f61d01439fc35132"
-  integrity sha512-tneNNYclHmNNIbo6J7XXEumoJZLBXqeO2LFufWxRvIs5yeVVfaJN3zWREl1oo5KP67aDixYgEKB7LH0oeTL+lQ==
+"@brightlayer-ui/colors@^3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@brightlayer-ui/colors/-/colors-3.0.1.tgz#f085acf6b6b4266a01798c78bc25841d15e44b3e"
+  integrity sha512-AE9F6FN1EQWMoqFTak6q8MN3wg9et2u2SUs6HjYhcS3GVSHjMWVSsuJZ2aD5Lu9409Gfi6pBHDWsJZ5PyeLsdQ==
+  dependencies:
+    "@brightlayer-ui/types" "^2.0.0"
+
+"@brightlayer-ui/prettier-config@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@brightlayer-ui/prettier-config/-/prettier-config-1.0.3.tgz#e40a7ae7435c6fd5118acbf249080e0aa81e93af"
+  integrity sha512-EYm3+V7Qd+oYEF+8FadsXAZqXryEHHbGnrV1BMp9selhABjceqUqXPVE4Sn3SKWQdBNJ3En2A3EzgrzRbvRTaw==
+
+"@brightlayer-ui/types@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@brightlayer-ui/types/-/types-2.0.0.tgz#d8adc0cdb96c164943adbad6e74043128a8b4112"
+  integrity sha512-DTCVwND6YC9qrkQl7pkFlN6QxDReJHtjuAiFU9HkXJN368vlw+fzHQ5/j4sB1sZl2eNwOgccv5ecl2XrlolOCw==
 
 "@types/chart.js@^2.8.5":
   version "2.8.5"
@@ -56,6 +68,11 @@ moment@^2.10.2:
   version "2.24.0"
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.24.0.tgz#0d055d53f5052aa653c9f6eb68bb5d12bf5c2b5b"
   integrity sha512-bV7f+6l2QigeBBZSM/6yTNq4P2fNpSWj/0e7jQcy87A8e7o2nAfP/34/2ky5Vw4B9S446EtIhodAzkFCcR4dQg==
+
+prettier@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.2.1.tgz#795a1a78dd52f073da0cd42b21f9c91381923ff5"
+  integrity sha512-PqyhM2yCjg/oKkFPtTGUojv7gnZAoG80ttl45O6x2Ug/rMJw4wcc9k6aaf2hibP7BGVCCM33gZoGjyvt9mm16Q==
 
 type-detect@^4.0.8:
   version "4.0.8"

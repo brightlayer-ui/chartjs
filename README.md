@@ -1,17 +1,17 @@
 # ChartJS Configurations
-[![](https://img.shields.io/npm/v/@pxblue/chartjs.svg?label=@pxblue/chartjs&style=flat)](https://www.npmjs.com/package/@pxblue/chartjs)
-[![](https://img.shields.io/circleci/project/github/pxblue/chartjs/master.svg?style=flat)](https://circleci.com/gh/pxblue/chartjs/tree/master)
+[![](https://img.shields.io/npm/v/@brightlayer-ui/chartjs.svg?label=@brightlayer-ui/chartjs&style=flat)](https://www.npmjs.com/package/@brightlayer-ui/chartjs)
+[![](https://img.shields.io/circleci/project/github/brightlayer-ui/chartjs/master.svg?style=flat)](https://circleci.com/gh/brightlayer-ui/chartjs/tree/master)
 
-This package contains basic support for ChartJS line, pie, bar, and donut graphs for use with PX Blue. 
+This package contains basic support for ChartJS line, pie, bar, and donut graphs for use with Brightlayer UI. 
 
 ## Installation
 Install with npm
 ```
-npm install --save @pxblue/chartjs
+npm install --save @brightlayer-ui/chartjs
 ```
 or yarn
 ```
-yarn add @pxblue/chartjs
+yarn add @brightlayer-ui/chartjs
 ```
 
 ## Basic Usage
@@ -30,13 +30,13 @@ import {
     createPieChartConfig, 
     createBarChartConfig, 
     createDonutChartConfig
-} from '@pxblue/chartjs'; 
+} from '@brightlayer-ui/chartjs'; 
 ```
 
-and then use these functions create PXBlue-themed chart configurations.
+and then use these functions create Brightlayer UI themed chart configurations.
 
 ```
-import { createLineChartConfig, drawChart } from '@pxblue/chartjs'
+import { createLineChartConfig, drawChart } from '@brightlayer-ui/chartjs'
 ...
 const lineChartConfig = createLineChartConfig();
 drawChart(lineChartConfig, 'graphId');
@@ -49,7 +49,7 @@ Read the following section for instructions on specifying your own configuration
 When you are ready to customize charts of your own, you can modify the returned configuration object before drawing it. 
 
 ```
-import { createPieChartConfig, drawChart } from '@pxblue/chartjs';
+import { createPieChartConfig, drawChart } from '@brightlayer-ui/chartjs';
 ...
 const config = createPieChartConfig();
 config.data.datasets[0].backgroundColor = ['red', 'blue', 'green'];
@@ -61,5 +61,5 @@ This configuration object will accept any property than can be supplied to a sta
 ## Demos
 | Framework           | Live Examples  |
 | ---------------- |------------------|
-| Angular | [View on Stackblitz](https://stackblitz.com/github/pxblue/chartjs/tree/master/angular-demo)
-| React | [View on Code Sandbox](https://codesandbox.io/s/github/pxblue/chartjs/tree/master/react-demo)
+| Angular | [View on Stackblitz](https://stackblitz.com/github/brightlayer-ui/chartjs/tree/master/angular-demo)
+| React | [View on Code Sandbox](https://codesandbox.io/s/github/brightlayer-ui/chartjs/tree/master/react-demo)
