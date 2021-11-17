@@ -21,7 +21,7 @@
         "publish:package": "set npm_config_yes=true && npx -p @brightlayer-ui/publish blui-publish",
         "start:angular": "yarn linkscript && cd angular-demo && yarn start",
         "start:react": "yarn linkscript && cd react-demo && yarn start",
-        "tag:package": "npx -p @brightlayer-ui/tag blui-tag"
+        "tag:package": "npx -p @brightlayer-ui/tag blui-tag -s -blui-chartjs"
     },
     "repository": {
         "type": "git",
