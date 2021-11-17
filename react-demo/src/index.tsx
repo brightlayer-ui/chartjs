@@ -7,11 +7,11 @@ import {
   MuiThemeProvider,
   createMuiTheme
 } from '@material-ui/core/styles';
-import * as PXBlueThemes from '@pxblue/react-themes';
-import '@pxblue/react-themes/open-sans';
+import * as BrightlayerUIThemes from '@brightlayer-ui/react-themes';
+import '@brightlayer-ui/react-themes/open-sans';
 
 ReactDOM.render(
-  <MuiThemeProvider theme={createMuiTheme(PXBlueThemes.blue)}>
+  <MuiThemeProvider theme={createMuiTheme(BrightlayerUIThemes.blue)}>
      <App/>
   </MuiThemeProvider>, document.getElementById('root'));
 
