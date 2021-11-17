@@ -304,10 +304,10 @@
     "@brightlayer-ui/colors" "^3.0.0"
     "@fontsource/open-sans" "^4.1.0"
 
-"@brightlayer-ui/chartjs@^1.0.0-beta.0":
-  version "1.0.0-beta.0"
-  resolved "https://registry.yarnpkg.com/@brightlayer-ui/chartjs/-/chartjs-1.0.0-beta.0.tgz#ddac00bde9e26718f6f02d9691066698ce848389"
-  integrity sha512-grv6wAp3Jse7CIkG7ddN/TeuyZrdVjnsIY1FHXDJhET1NWtZ0juOXDhVoRRK13GfP3t1z377CZzlF/s6wq9Ojg==
+"@brightlayer-ui/chartjs@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@brightlayer-ui/chartjs/-/chartjs-1.0.0.tgz#14e9614c17439fe0942038e6654150b263fc44c2"
+  integrity sha512-hXwJwrOFEQUNJIa466gRpCsGq2veiQK8cTnbLwjLxkAO4HYomhhwRcreMrJ4CDRFCpKdr0yD3b2FN5KZv00wVw==
   dependencies:
     "@brightlayer-ui/colors" "^3.0.1"
     "@types/chart.js" "^2.8.5"

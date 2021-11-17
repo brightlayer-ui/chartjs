@@ -1143,10 +1143,10 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@brightlayer-ui/chartjs@^1.0.0-beta.0":
-  version "1.0.0-beta.0"
-  resolved "https://registry.yarnpkg.com/@brightlayer-ui/chartjs/-/chartjs-1.0.0-beta.0.tgz#ddac00bde9e26718f6f02d9691066698ce848389"
-  integrity sha512-grv6wAp3Jse7CIkG7ddN/TeuyZrdVjnsIY1FHXDJhET1NWtZ0juOXDhVoRRK13GfP3t1z377CZzlF/s6wq9Ojg==
+"@brightlayer-ui/chartjs@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@brightlayer-ui/chartjs/-/chartjs-1.0.0.tgz#14e9614c17439fe0942038e6654150b263fc44c2"
+  integrity sha512-hXwJwrOFEQUNJIa466gRpCsGq2veiQK8cTnbLwjLxkAO4HYomhhwRcreMrJ4CDRFCpKdr0yD3b2FN5KZv00wVw==
   dependencies:
     "@brightlayer-ui/colors" "^3.0.1"
     "@types/chart.js" "^2.8.5"
