@@ -1,0 +1,26 @@
+{
+    "@brightlayer-ui/colors@3.0.1": {
+        "licenses": "BSD-3-Clause",
+        "repository": "https://github.com/brightlayer-ui/colors",
+        "licenseUrl": "https://github.com/brightlayer-ui/colors/raw/master/LICENSE",
+        "parents": "@brightlayer-ui/chartjs"
+    },
+    "@types/chart.js@2.8.5": {
+        "licenses": "MIT",
+        "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped",
+        "licenseUrl": "https://github.com/DefinitelyTyped/DefinitelyTyped/raw/master/LICENSE",
+        "parents": "@brightlayer-ui/chartjs"
+    },
+    "chart.js@2.8.0": {
+        "licenses": "MIT",
+        "repository": "https://github.com/chartjs/Chart.js",
+        "licenseUrl": "https://github.com/chartjs/Chart.js/raw/master/LICENSE.md",
+        "parents": "@brightlayer-ui/chartjs"
+    },
+    "deepcopy@2.0.0": {
+        "licenses": "MIT",
+        "repository": "https://github.com/sasaplus1/deepcopy.js",
+        "licenseUrl": "https://github.com/sasaplus1/deepcopy.js/raw/master/LICENSE",
+        "parents": "@brightlayer-ui/chartjs"
+    }
+}
