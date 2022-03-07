@@ -10,6 +10,7 @@
         "dist/**",
         "package.json",
         "LICENSE",
+        "LICENSES.json",
         "README.md"
     ],
     "scripts": {
