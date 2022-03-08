@@ -23,7 +23,8 @@
         "start:angular": "yarn linkscript && cd angular-demo && yarn start",
         "start:react": "yarn linkscript && cd react-demo && yarn start",
         "tag:package": "npx -p @brightlayer-ui/tag blui-tag -s -blui-chartjs",
-        "generate:licenses": "npm-license-crawler -onlyDirectDependencies -json LICENSES.json"
+        "generate:licenses": "npm-license-crawler -onlyDirectDependencies -json LICENSES.json",
+        "precommit": "yarn && yarn build && yarn generate:licenses && yarn test:build"
     },
     "repository": {
         "type": "git",
