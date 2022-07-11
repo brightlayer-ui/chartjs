@@ -40,7 +40,7 @@
         "@brightlayer-ui/prettier-config": "^1.0.3",
         "npm-license-crawler": "^0.2.1",
         "prettier": "^2.2.1",
-        "typescript": "^3.6.3"
+        "typescript": "^4.7.4"
     },
     "prettier": "@brightlayer-ui/prettier-config",
     "keywords": [
