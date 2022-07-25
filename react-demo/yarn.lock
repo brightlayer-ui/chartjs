@@ -1700,19 +1700,19 @@
     "@svgr/plugin-svgo" "^5.5.0"
     loader-utils "^2.0.0"
 
-"@testing-library/dom@^7.28.1":
-  version "7.30.1"
-  resolved "https://registry.yarnpkg.com/@testing-library/dom/-/dom-7.30.1.tgz#07b6f3ccd7f1f1e34ab0406932073e2971817f3d"
-  integrity sha512-RQUvqqq2lxTCOffhSNxpX/9fCoR+nwuQPmG5uhuuEH5KBAzNf2bK3OzBoWjm5zKM78SLjnGRAKt8hRjQA4E46A==
+"@testing-library/dom@^8.0.0":
+  version "8.16.0"
+  resolved "https://registry.yarnpkg.com/@testing-library/dom/-/dom-8.16.0.tgz#d6fc50250aed17b1035ca1bd64655e342db3936a"
+  integrity sha512-uxF4zmnLHHDlmW4l+0WDjcgLVwCvH+OVLpD8Dfp+Bjfz85prwxWGbwXgJdLtkgjD0qfOzkJF9SmA6YZPsMYX4w==
   dependencies:
     "@babel/code-frame" "^7.10.4"
     "@babel/runtime" "^7.12.5"
     "@types/aria-query" "^4.2.0"
-    aria-query "^4.2.2"
+    aria-query "^5.0.0"
     chalk "^4.1.0"
-    dom-accessibility-api "^0.5.4"
+    dom-accessibility-api "^0.5.9"
     lz-string "^1.4.4"
-    pretty-format "^26.6.2"
+    pretty-format "^27.0.2"
 
 "@testing-library/jest-dom@^5.16.4":
   version "5.16.4"
@@ -1729,13 +1729,14 @@
     lodash "^4.17.15"
     redent "^3.0.0"
 
-"@testing-library/react@^11.1.0":
-  version "11.2.5"
-  resolved "https://registry.yarnpkg.com/@testing-library/react/-/react-11.2.5.tgz#ae1c36a66c7790ddb6662c416c27863d87818eb9"
-  integrity sha512-yEx7oIa/UWLe2F2dqK0FtMF9sJWNXD+2PPtp39BvE0Kh9MJ9Kl0HrZAgEuhUJR+Lx8Di6Xz+rKwSdEPY2UV8ZQ==
+"@testing-library/react@^12.1.5":
+  version "12.1.5"
+  resolved "https://registry.yarnpkg.com/@testing-library/react/-/react-12.1.5.tgz#bb248f72f02a5ac9d949dea07279095fa577963b"
+  integrity sha512-OfTXCJUFgjd/digLUuPxa0+/3ZxsQmE7ub9kcbW/wi96Bh3o/p5vrETcBGfP17NWPGqeYYl5LTRpwyGoMC4ysg==
   dependencies:
     "@babel/runtime" "^7.12.5"
-    "@testing-library/dom" "^7.28.1"
+    "@testing-library/dom" "^8.0.0"
+    "@types/react-dom" "<18.0.0"
 
 "@testing-library/user-event@^12.1.10":
   version "12.8.3"
@@ -1914,12 +1915,12 @@
   resolved "https://registry.yarnpkg.com/@types/q/-/q-1.5.4.tgz#15925414e0ad2cd765bfef58842f7e26a7accb24"
   integrity sha512-1HcDas8SEj4z1Wc696tH56G8OlRaH/sqZOynNNB+HF0WOeXPaxTtbYzJY2oEfiUxjSKjhCKr+MvR7dCHcEelug==
 
-"@types/react-dom@^17.0.0":
-  version "17.0.3"
-  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-17.0.3.tgz#7fdf37b8af9d6d40127137865bb3fff8871d7ee1"
-  integrity sha512-4NnJbCeWE+8YBzupn/YrJxZ8VnjcJq5iR1laqQ1vkpQgBiA7bwk0Rp24fxsdNinzJY2U+HHS4dJJDPdoMjdJ7w==
+"@types/react-dom@<18.0.0", "@types/react-dom@^17.0.0":
+  version "17.0.17"
+  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-17.0.17.tgz#2e3743277a793a96a99f1bf87614598289da68a1"
+  integrity sha512-VjnqEmqGnasQKV0CWLevqMTXBYG9GbwuE6x3VetERLh0cq2LTptFE73MrQi2S7GkKXCf2GgwItB/melLnxfnsg==
   dependencies:
-    "@types/react" "*"
+    "@types/react" "^17"
 
 "@types/react-transition-group@^4.2.0":
   version "4.4.1"
@@ -1932,6 +1933,15 @@
   version "17.0.3"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.3.tgz#ba6e215368501ac3826951eef2904574c262cc79"
   integrity sha512-wYOUxIgs2HZZ0ACNiIayItyluADNbONl7kt8lkLjVK8IitMH5QMyAh75Fwhmo37r1m7L2JaFj03sIfxBVDvRAg==
+  dependencies:
+    "@types/prop-types" "*"
+    "@types/scheduler" "*"
+    csstype "^3.0.2"
+
+"@types/react@^17":
+  version "17.0.47"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.47.tgz#4ee71aaf4c5a9e290e03aa4d0d313c5d666b3b78"
+  integrity sha512-mk0BL8zBinf2ozNr3qPnlu1oyVTYq+4V7WA76RgxUAtf0Em/Wbid38KN6n4abEkvO4xMTBWmnP1FtQzgkEiJoA==
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
@@ -4279,7 +4289,7 @@ doctrine@^3.0.0:
   dependencies:
     esutils "^2.0.2"
 
-dom-accessibility-api@^0.5.4, dom-accessibility-api@^0.5.6:
+dom-accessibility-api@^0.5.6, dom-accessibility-api@^0.5.9:
   version "0.5.14"
   resolved "https://registry.yarnpkg.com/dom-accessibility-api/-/dom-accessibility-api-0.5.14.tgz#56082f71b1dc7aac69d83c4285eef39c15d93f56"
   integrity sha512-NMt+m9zFMPZe0JcY9gN224Qvk6qLIdqex29clBvc/y75ZBX9YA9wNK3frsYvu2DI1xcCIwxwnX+TlsJ2DSOADg==
@@ -8987,6 +8997,15 @@ pretty-format@^26.6.0, pretty-format@^26.6.2:
     "@jest/types" "^26.6.2"
     ansi-regex "^5.0.0"
     ansi-styles "^4.0.0"
+    react-is "^17.0.1"
+
+pretty-format@^27.0.2:
+  version "27.5.1"
+  resolved "https://registry.yarnpkg.com/pretty-format/-/pretty-format-27.5.1.tgz#2181879fdea51a7a5851fb39d920faa63f01d88e"
+  integrity sha512-Qb1gy5OrP5+zDf2Bvnzdl3jsTf1qXVMazbvCoKhtKqVs4/YK4ozX4gKQJJVyNe+cajNPn0KoC0MC3FUmaHWEmQ==
+  dependencies:
+    ansi-regex "^5.0.1"
+    ansi-styles "^5.0.0"
     react-is "^17.0.1"
 
 pretty-format@^28.0.0, pretty-format@^28.1.1:
