@@ -33,7 +33,7 @@
     "dependencies": {
         "@brightlayer-ui/colors": "^3.0.1",
         "@types/chart.js": "^2.8.5",
-        "chart.js": "^3.8.2",
+        "chart.js": "^2.8.0",
         "deepcopy": "^2.0.0"
     },
     "devDependencies": {
